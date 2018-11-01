@@ -9,7 +9,7 @@ describe('imagesReducer', () => {
   it('Should set images when type SET_IMAGES', () => {
     const images = [1, 2, 3, 4, 5];
     const mockAction = {
-      type: 'SET_IMAGES',
+      type: 'INSERT_IMAGES',
       images,
     };
     const result = imagesReducer(undefined, mockAction);

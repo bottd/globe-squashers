@@ -8,7 +8,7 @@ describe('imagesActions', () => {
         type: 'INSERT_IMAGES',
         images,
       };
-      const result = setImages(images);
+      const result = insertImages(images);
       expect(result).toEqual(expected);
     });
   });
