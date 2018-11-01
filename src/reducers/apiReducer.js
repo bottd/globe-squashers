@@ -7,10 +7,8 @@ const defaultState = {
 
 export function apiReducer(state, action) {
   switch (action.type) {
-    case 'PAGE_FORWARD':
-      return {...state, page: state.page + 1};
-    case 'PAGE_BACK':
-      return {...state, page: state.page - 1};
+    case 'SET_PAGE':
+      return {...state, page: action.page};
     case 'CHANGE_ENDPOINT':
       return {...state, endpoint: action.endpoint};
     case 'IS_LOADING':

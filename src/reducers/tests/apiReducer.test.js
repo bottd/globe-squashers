@@ -19,7 +19,7 @@ describe('apiRecuer', () => {
     expect(result).toEqual(expected);
   });
 
-  it('Should increment page on PAGE_FORWARD', () => {
+  it('Should set page on SET_PAGE', () => {
     const expected = {
       page: 2,
       endpoint: 'images',
@@ -27,21 +27,8 @@ describe('apiRecuer', () => {
       error: null,
     };
     const mockAction = {
-      type: 'PAGE_FORWARD',
-    };
-    const result = apiReducer(mockState, mockAction);
-    expect(result).toEqual(expected);
-  });
-
-  it('Should decrement page on PAGE_BACK', () => {
-    const expected = {
-      page: 0,
-      endpoint: 'images',
-      loading: false,
-      error: null,
-    };
-    const mockAction = {
-      type: 'PAGE_BACK',
+      type: 'SET_PAGE',
+      page: 2
     };
     const result = apiReducer(mockState, mockAction);
     expect(result).toEqual(expected);
