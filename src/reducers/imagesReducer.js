@@ -6,6 +6,6 @@ export function imagesReducer(state = [], action) {
     case 'RESET_IMAGES':
       return defaultState;
     default:
-      return defaultState;
+      return state;
   }
 }

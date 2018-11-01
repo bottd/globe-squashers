@@ -2,7 +2,9 @@
 
 exports[`App Should render like snapshot 1`] = `
 ReactWrapper {
-  Symbol(enzyme.__unrendered__): <App />,
+  Symbol(enzyme.__unrendered__): <App
+    fetchImages={[MockFunction]}
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -16,66 +18,42 @@ ReactWrapper {
     "instance": null,
     "key": undefined,
     "nodeType": "function",
-    "props": Object {},
+    "props": Object {
+      "fetchImages": [MockFunction],
+    },
     "ref": null,
     "rendered": Object {
       "instance": <div
         class="App"
       >
         <h1>
-          hi
+          Hey
         </h1>
-        <button>
-          Button
-        </button>
       </div>,
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": Array [
-          <h1>
-            hi
-          </h1>,
-          <button
-            onClick={[Function]}
-          >
-            Button
-          </button>,
-        ],
+        "children": <h1>
+          Hey
+        </h1>,
         "className": "App",
       },
       "ref": null,
       "rendered": Array [
         Object {
           "instance": <h1>
-            hi
+            Hey
           </h1>,
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "hi",
+            "children": "Hey",
           },
           "ref": null,
           "rendered": Array [
-            "hi",
+            "Hey",
           ],
           "type": "h1",
-        },
-        Object {
-          "instance": <button>
-            Button
-          </button>,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Button",
-            "onClick": [Function],
-          },
-          "ref": null,
-          "rendered": Array [
-            "Button",
-          ],
-          "type": "button",
         },
       ],
       "type": "div",
@@ -87,66 +65,42 @@ ReactWrapper {
       "instance": null,
       "key": undefined,
       "nodeType": "function",
-      "props": Object {},
+      "props": Object {
+        "fetchImages": [MockFunction],
+      },
       "ref": null,
       "rendered": Object {
         "instance": <div
           class="App"
         >
           <h1>
-            hi
+            Hey
           </h1>
-          <button>
-            Button
-          </button>
         </div>,
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": Array [
-            <h1>
-              hi
-            </h1>,
-            <button
-              onClick={[Function]}
-            >
-              Button
-            </button>,
-          ],
+          "children": <h1>
+            Hey
+          </h1>,
           "className": "App",
         },
         "ref": null,
         "rendered": Array [
           Object {
             "instance": <h1>
-              hi
+              Hey
             </h1>,
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "hi",
+              "children": "Hey",
             },
             "ref": null,
             "rendered": Array [
-              "hi",
+              "Hey",
             ],
             "type": "h1",
-          },
-          Object {
-            "instance": <button>
-              Button
-            </button>,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Button",
-              "onClick": [Function],
-            },
-            "ref": null,
-            "rendered": Array [
-              "Button",
-            ],
-            "type": "button",
           },
         ],
         "type": "div",
