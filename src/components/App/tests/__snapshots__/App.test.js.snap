@@ -27,59 +27,33 @@ ReactWrapper {
         class="App"
       >
         <h1>
-          hi
+          Hey
         </h1>
-        <button>
-          Button
-        </button>
       </div>,
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": Array [
-          <h1>
-            hi
-          </h1>,
-          <button
-            onClick={[Function]}
-          >
-            Button
-          </button>,
-        ],
+        "children": <h1>
+          Hey
+        </h1>,
         "className": "App",
       },
       "ref": null,
       "rendered": Array [
         Object {
           "instance": <h1>
-            hi
+            Hey
           </h1>,
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "hi",
+            "children": "Hey",
           },
           "ref": null,
           "rendered": Array [
-            "hi",
+            "Hey",
           ],
           "type": "h1",
-        },
-        Object {
-          "instance": <button>
-            Button
-          </button>,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Button",
-            "onClick": [Function],
-          },
-          "ref": null,
-          "rendered": Array [
-            "Button",
-          ],
-          "type": "button",
         },
       ],
       "type": "div",
@@ -100,59 +74,33 @@ ReactWrapper {
           class="App"
         >
           <h1>
-            hi
+            Hey
           </h1>
-          <button>
-            Button
-          </button>
         </div>,
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": Array [
-            <h1>
-              hi
-            </h1>,
-            <button
-              onClick={[Function]}
-            >
-              Button
-            </button>,
-          ],
+          "children": <h1>
+            Hey
+          </h1>,
           "className": "App",
         },
         "ref": null,
         "rendered": Array [
           Object {
             "instance": <h1>
-              hi
+              Hey
             </h1>,
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "hi",
+              "children": "Hey",
             },
             "ref": null,
             "rendered": Array [
-              "hi",
+              "Hey",
             ],
             "type": "h1",
-          },
-          Object {
-            "instance": <button>
-              Button
-            </button>,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Button",
-              "onClick": [Function],
-            },
-            "ref": null,
-            "rendered": Array [
-              "Button",
-            ],
-            "type": "button",
           },
         ],
         "type": "div",

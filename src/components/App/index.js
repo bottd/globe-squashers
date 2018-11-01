@@ -3,31 +3,28 @@ import {connect} from 'react-redux';
 import {fetchImages} from '../../thunks/fetchImages';
 import './App.css';
 
-export function App({images}) {
-  const [state, setState] = useState('hi');
+export function App({fetchImages, images, page}) {
+  const [initialLoad, setInitialLoad] = useState(false);
   useEffect(() => {
-    if(!images.length){
-      console.log('o SHIT!');
-      fetchImages();
+    if(!initialLoad) {
+      fetchImages(page);
+      setInitialLoad(true);
     }
   });
-  const toggle = () => {
-    setState('hello');
-  };
   return (
     <div className="App">
-      <h1>{state}</h1>
-      <button onClick={toggle}>Button</button>
+      <h1>Hey</h1>
     </div>
   );
 }
 
 const mapStateToProps = state => ({
+  page: state.API.page,
   images: state.images
 });
 
 const mapDispatchToProps = dispatch => ({
-  fetchImages: () => dispatch(fetchImages())
+  fetchImages: (page) => dispatch(fetchImages(page))
 });
 
 export default connect(
