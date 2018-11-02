@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
 @import url('https://fonts.googleapis.com/css?family=Roboto:500');
 
-.Home {
+.Home-title-page {
   background-image: url('http://imgsrc.hubblesite.org/hvi/uploads/image_file/image_attachment/28735/xlarge_web.jpg');
   background-repeat:no-repeat;
   background-size:cover;
@@ -37,4 +37,10 @@
   margin: 15px auto;
   font-size: 3em;
   font-family: 'Josefin Sans', sans-serif;
+}
+
+.Home-info-page {
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
 }
