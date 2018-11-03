@@ -1,13 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import {shallow, mount} from 'enzyme';
+import {shallow} from 'enzyme';
 import {App} from '../';
 
 describe('App', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = shallow(<App fetchImages={jest.fn()} />);
+    wrapper = shallow(<App/>);
   });
 
   it('Should render like snapshot', () => {
