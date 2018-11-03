@@ -1,0 +1,23 @@
+.Nav {
+  background-color: #000;
+  display: flex;
+  position: fixed;
+  top: 1px;
+  width: 100vw;
+  z-index: 999;
+}
+
+.NavLink {
+  color: #FFF;
+  font-size: 2em;
+  margin-left: 1em;
+  text-decoration: none;
+}
+
+.NavLink:hover {
+  text-decoration: underline;
+}
+
+.active {
+  text-decoration: underline;
+}
