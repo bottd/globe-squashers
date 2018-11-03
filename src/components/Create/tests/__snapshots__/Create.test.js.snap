@@ -3,7 +3,9 @@
 exports[`Create Create component Should render like snapshot 1`] = `
 ReactWrapper {
   Symbol(enzyme.__unrendered__): <Create
+    fetchImage={[MockFunction]}
     fetchImages={[MockFunction]}
+    image={Object {}}
     images={Array []}
     page={2}
   />,
@@ -21,7 +23,9 @@ ReactWrapper {
     "key": undefined,
     "nodeType": "function",
     "props": Object {
+      "fetchImage": [MockFunction],
       "fetchImages": [MockFunction],
+      "image": Object {},
       "images": Array [],
       "page": 2,
     },
@@ -30,17 +34,146 @@ ReactWrapper {
       "instance": <div
         class="Create"
       >
-        FSDKJFLSDJ
+        <form>
+          <textarea
+            class="note-input"
+            placeholder="Write your note here"
+            rows="5"
+          />
+          <button
+            type="submit"
+          >
+            Submit
+          </button>
+        </form>
+        <img
+          class="hubble-img"
+        />
       </div>,
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": "FSDKJFLSDJ",
+        "children": Array [
+          <form
+            onSubmit={[Function]}
+          >
+            <textarea
+              className="note-input"
+              onChange={[Function]}
+              placeholder="Write your note here"
+              rows="5"
+              value=""
+            />
+            <button
+              onClick={[Function]}
+              type="submit"
+            >
+              Submit
+            </button>
+          </form>,
+          <img
+            className="hubble-img"
+          />,
+        ],
         "className": "Create",
       },
       "ref": null,
       "rendered": Array [
-        "FSDKJFLSDJ",
+        Object {
+          "instance": <form>
+            <textarea
+              class="note-input"
+              placeholder="Write your note here"
+              rows="5"
+            />
+            <button
+              type="submit"
+            >
+              Submit
+            </button>
+          </form>,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <textarea
+                className="note-input"
+                onChange={[Function]}
+                placeholder="Write your note here"
+                rows="5"
+                value=""
+              />,
+              <button
+                onClick={[Function]}
+                type="submit"
+              >
+                Submit
+              </button>,
+            ],
+            "onSubmit": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": <textarea
+                class="note-input"
+                placeholder="Write your note here"
+                rows="5"
+              />,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "note-input",
+                "onChange": [Function],
+                "placeholder": "Write your note here",
+                "rows": "5",
+                "value": "",
+              },
+              "ref": null,
+              "rendered": Array [
+                undefined,
+              ],
+              "type": "textarea",
+            },
+            Object {
+              "instance": <button
+                type="submit"
+              >
+                Submit
+              </button>,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Submit",
+                "onClick": [Function],
+                "type": "submit",
+              },
+              "ref": null,
+              "rendered": Array [
+                "Submit",
+              ],
+              "type": "button",
+            },
+          ],
+          "type": "form",
+        },
+        Object {
+          "instance": <img
+            class="hubble-img"
+          />,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": undefined,
+            "className": "hubble-img",
+            "src": undefined,
+          },
+          "ref": null,
+          "rendered": Array [
+            undefined,
+          ],
+          "type": "img",
+        },
       ],
       "type": "div",
     },
@@ -52,7 +185,9 @@ ReactWrapper {
       "key": undefined,
       "nodeType": "function",
       "props": Object {
+        "fetchImage": [MockFunction],
         "fetchImages": [MockFunction],
+        "image": Object {},
         "images": Array [],
         "page": 2,
       },
@@ -61,17 +196,146 @@ ReactWrapper {
         "instance": <div
           class="Create"
         >
-          FSDKJFLSDJ
+          <form>
+            <textarea
+              class="note-input"
+              placeholder="Write your note here"
+              rows="5"
+            />
+            <button
+              type="submit"
+            >
+              Submit
+            </button>
+          </form>
+          <img
+            class="hubble-img"
+          />
         </div>,
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "FSDKJFLSDJ",
+          "children": Array [
+            <form
+              onSubmit={[Function]}
+            >
+              <textarea
+                className="note-input"
+                onChange={[Function]}
+                placeholder="Write your note here"
+                rows="5"
+                value=""
+              />
+              <button
+                onClick={[Function]}
+                type="submit"
+              >
+                Submit
+              </button>
+            </form>,
+            <img
+              className="hubble-img"
+            />,
+          ],
           "className": "Create",
         },
         "ref": null,
         "rendered": Array [
-          "FSDKJFLSDJ",
+          Object {
+            "instance": <form>
+              <textarea
+                class="note-input"
+                placeholder="Write your note here"
+                rows="5"
+              />
+              <button
+                type="submit"
+              >
+                Submit
+              </button>
+            </form>,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <textarea
+                  className="note-input"
+                  onChange={[Function]}
+                  placeholder="Write your note here"
+                  rows="5"
+                  value=""
+                />,
+                <button
+                  onClick={[Function]}
+                  type="submit"
+                >
+                  Submit
+                </button>,
+              ],
+              "onSubmit": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": <textarea
+                  class="note-input"
+                  placeholder="Write your note here"
+                  rows="5"
+                />,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "note-input",
+                  "onChange": [Function],
+                  "placeholder": "Write your note here",
+                  "rows": "5",
+                  "value": "",
+                },
+                "ref": null,
+                "rendered": Array [
+                  undefined,
+                ],
+                "type": "textarea",
+              },
+              Object {
+                "instance": <button
+                  type="submit"
+                >
+                  Submit
+                </button>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Submit",
+                  "onClick": [Function],
+                  "type": "submit",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Submit",
+                ],
+                "type": "button",
+              },
+            ],
+            "type": "form",
+          },
+          Object {
+            "instance": <img
+              class="hubble-img"
+            />,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": undefined,
+              "className": "hubble-img",
+              "src": undefined,
+            },
+            "ref": null,
+            "rendered": Array [
+              undefined,
+            ],
+            "type": "img",
+          },
         ],
         "type": "div",
       },

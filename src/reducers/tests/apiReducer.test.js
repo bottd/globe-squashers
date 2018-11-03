@@ -10,7 +10,7 @@ describe('apiRecuer', () => {
 
   it('Should have a default state', () => {
     const expected = {
-      page: 1,
+      page: 0,
       endpoint: 'images',
       loading: false,
       error: null,

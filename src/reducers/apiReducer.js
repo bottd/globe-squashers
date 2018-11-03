@@ -1,11 +1,11 @@
 const defaultState = {
-  page: 1,
+  page: 0,
   endpoint: 'images',
   loading: false,
   error: null,
 };
 
-export function apiReducer(state, action) {
+export function apiReducer(state = defaultState, action) {
   switch (action.type) {
     case 'SET_PAGE':
       return {...state, page: action.page};
@@ -16,6 +16,6 @@ export function apiReducer(state, action) {
     case 'HAS_ERRORED':
       return {...state, error: action.message};
     default:
-      return defaultState;
+      return state;
   }
 }
