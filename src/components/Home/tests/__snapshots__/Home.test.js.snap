@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Home component Should render like snapshot 1`] = `
+exports[`Home Home component Should render like snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Home />,
@@ -18,6 +18,21 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
+        <NavLink
+          activeClassName="active"
+          aria-current="page"
+          className="NavLink-create"
+          to="/create"
+        >
+          <p
+            className="button-header"
+          >
+            SEARCH
+          </p>
+          <i
+            className="fas fa-caret-right"
+          />
+        </NavLink>,
         <div
           className="Home-title-page"
         >
@@ -63,6 +78,54 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "active",
+          "aria-current": "page",
+          "children": Array [
+            <p
+              className="button-header"
+            >
+              SEARCH
+            </p>,
+            <i
+              className="fas fa-caret-right"
+            />,
+          ],
+          "className": "NavLink-create",
+          "to": "/create",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "SEARCH",
+              "className": "button-header",
+            },
+            "ref": null,
+            "rendered": "SEARCH",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "fas fa-caret-right",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "i",
+          },
+        ],
+        "type": [Function],
+      },
       Object {
         "instance": null,
         "key": undefined,
@@ -289,6 +352,21 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
+          <NavLink
+            activeClassName="active"
+            aria-current="page"
+            className="NavLink-create"
+            to="/create"
+          >
+            <p
+              className="button-header"
+            >
+              SEARCH
+            </p>
+            <i
+              className="fas fa-caret-right"
+            />
+          </NavLink>,
           <div
             className="Home-title-page"
           >
@@ -334,6 +412,54 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "active",
+            "aria-current": "page",
+            "children": Array [
+              <p
+                className="button-header"
+              >
+                SEARCH
+              </p>,
+              <i
+                className="fas fa-caret-right"
+              />,
+            ],
+            "className": "NavLink-create",
+            "to": "/create",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "SEARCH",
+                "className": "button-header",
+              },
+              "ref": null,
+              "rendered": "SEARCH",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "fas fa-caret-right",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "i",
+            },
+          ],
+          "type": [Function],
+        },
         Object {
           "instance": null,
           "key": undefined,
@@ -549,6 +675,518 @@ ShallowWrapper {
           "ref": null,
           "rendered": null,
           "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Home InfoPage component Should render like snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <InfoPage />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <button
+          className="scroll-to-home"
+          onClick={[Function]}
+        >
+          <i
+            className="fas fa-caret-up"
+          />
+        </button>,
+        <div
+          className="Info-content"
+        >
+          <h1
+            className="Info-header"
+          >
+            ABOUT
+          </h1>
+          <p
+            className="Info-text"
+          >
+            Flat earthers face trouble due to the entire world being brainwashed against their beliefs. I want to help give them the tools to prove their points. Starting with NASA's Hubble Telescope pictures, Globe Squashers will make data easier to access for flat earthers to help give them the tools to debunk NASA and other government entities.
+          </p>
+        </div>,
+        <div
+          className="Info-content"
+        >
+          <img
+            alt="animated gif of flat earth map"
+            src="flatEarth.gif"
+          />
+        </div>,
+        <div
+          className="Info-content"
+        >
+          <img
+            alt="NASA logo"
+            src="NASA.png"
+          />
+        </div>,
+        <div
+          className="Info-content"
+        >
+          <h1
+            className="Info-header"
+          >
+            HOW?
+          </h1>
+          <p
+            className="Info-text"
+          >
+            Globe Squashers will deliver NASA Hubble Telescope images to you for examination. While examining a photo you can take notes and publish your findings for others to see. With access to everybody's findings you will also be able to quickly compile a mass of evidence to use as fuel for proving the Hubble Telescope is a hoax.
+          </p>
+        </div>,
+      ],
+      "className": "InfoPage",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <i
+            className="fas fa-caret-up"
+          />,
+          "className": "scroll-to-home",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "fas fa-caret-up",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "i",
+        },
+        "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1
+              className="Info-header"
+            >
+              ABOUT
+            </h1>,
+            <p
+              className="Info-text"
+            >
+              Flat earthers face trouble due to the entire world being brainwashed against their beliefs. I want to help give them the tools to prove their points. Starting with NASA's Hubble Telescope pictures, Globe Squashers will make data easier to access for flat earthers to help give them the tools to debunk NASA and other government entities.
+            </p>,
+          ],
+          "className": "Info-content",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "ABOUT",
+              "className": "Info-header",
+            },
+            "ref": null,
+            "rendered": "ABOUT",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Flat earthers face trouble due to the entire world being brainwashed against their beliefs. I want to help give them the tools to prove their points. Starting with NASA's Hubble Telescope pictures, Globe Squashers will make data easier to access for flat earthers to help give them the tools to debunk NASA and other government entities.",
+              "className": "Info-text",
+            },
+            "ref": null,
+            "rendered": "Flat earthers face trouble due to the entire world being brainwashed against their beliefs. I want to help give them the tools to prove their points. Starting with NASA's Hubble Telescope pictures, Globe Squashers will make data easier to access for flat earthers to help give them the tools to debunk NASA and other government entities.",
+            "type": "p",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <img
+            alt="animated gif of flat earth map"
+            src="flatEarth.gif"
+          />,
+          "className": "Info-content",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "animated gif of flat earth map",
+            "src": "flatEarth.gif",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <img
+            alt="NASA logo"
+            src="NASA.png"
+          />,
+          "className": "Info-content",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "NASA logo",
+            "src": "NASA.png",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1
+              className="Info-header"
+            >
+              HOW?
+            </h1>,
+            <p
+              className="Info-text"
+            >
+              Globe Squashers will deliver NASA Hubble Telescope images to you for examination. While examining a photo you can take notes and publish your findings for others to see. With access to everybody's findings you will also be able to quickly compile a mass of evidence to use as fuel for proving the Hubble Telescope is a hoax.
+            </p>,
+          ],
+          "className": "Info-content",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "HOW?",
+              "className": "Info-header",
+            },
+            "ref": null,
+            "rendered": "HOW?",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Globe Squashers will deliver NASA Hubble Telescope images to you for examination. While examining a photo you can take notes and publish your findings for others to see. With access to everybody's findings you will also be able to quickly compile a mass of evidence to use as fuel for proving the Hubble Telescope is a hoax.",
+              "className": "Info-text",
+            },
+            "ref": null,
+            "rendered": "Globe Squashers will deliver NASA Hubble Telescope images to you for examination. While examining a photo you can take notes and publish your findings for others to see. With access to everybody's findings you will also be able to quickly compile a mass of evidence to use as fuel for proving the Hubble Telescope is a hoax.",
+            "type": "p",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <button
+            className="scroll-to-home"
+            onClick={[Function]}
+          >
+            <i
+              className="fas fa-caret-up"
+            />
+          </button>,
+          <div
+            className="Info-content"
+          >
+            <h1
+              className="Info-header"
+            >
+              ABOUT
+            </h1>
+            <p
+              className="Info-text"
+            >
+              Flat earthers face trouble due to the entire world being brainwashed against their beliefs. I want to help give them the tools to prove their points. Starting with NASA's Hubble Telescope pictures, Globe Squashers will make data easier to access for flat earthers to help give them the tools to debunk NASA and other government entities.
+            </p>
+          </div>,
+          <div
+            className="Info-content"
+          >
+            <img
+              alt="animated gif of flat earth map"
+              src="flatEarth.gif"
+            />
+          </div>,
+          <div
+            className="Info-content"
+          >
+            <img
+              alt="NASA logo"
+              src="NASA.png"
+            />
+          </div>,
+          <div
+            className="Info-content"
+          >
+            <h1
+              className="Info-header"
+            >
+              HOW?
+            </h1>
+            <p
+              className="Info-text"
+            >
+              Globe Squashers will deliver NASA Hubble Telescope images to you for examination. While examining a photo you can take notes and publish your findings for others to see. With access to everybody's findings you will also be able to quickly compile a mass of evidence to use as fuel for proving the Hubble Telescope is a hoax.
+            </p>
+          </div>,
+        ],
+        "className": "InfoPage",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <i
+              className="fas fa-caret-up"
+            />,
+            "className": "scroll-to-home",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "fas fa-caret-up",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "i",
+          },
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h1
+                className="Info-header"
+              >
+                ABOUT
+              </h1>,
+              <p
+                className="Info-text"
+              >
+                Flat earthers face trouble due to the entire world being brainwashed against their beliefs. I want to help give them the tools to prove their points. Starting with NASA's Hubble Telescope pictures, Globe Squashers will make data easier to access for flat earthers to help give them the tools to debunk NASA and other government entities.
+              </p>,
+            ],
+            "className": "Info-content",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "ABOUT",
+                "className": "Info-header",
+              },
+              "ref": null,
+              "rendered": "ABOUT",
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Flat earthers face trouble due to the entire world being brainwashed against their beliefs. I want to help give them the tools to prove their points. Starting with NASA's Hubble Telescope pictures, Globe Squashers will make data easier to access for flat earthers to help give them the tools to debunk NASA and other government entities.",
+                "className": "Info-text",
+              },
+              "ref": null,
+              "rendered": "Flat earthers face trouble due to the entire world being brainwashed against their beliefs. I want to help give them the tools to prove their points. Starting with NASA's Hubble Telescope pictures, Globe Squashers will make data easier to access for flat earthers to help give them the tools to debunk NASA and other government entities.",
+              "type": "p",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <img
+              alt="animated gif of flat earth map"
+              src="flatEarth.gif"
+            />,
+            "className": "Info-content",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "animated gif of flat earth map",
+              "src": "flatEarth.gif",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <img
+              alt="NASA logo"
+              src="NASA.png"
+            />,
+            "className": "Info-content",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "NASA logo",
+              "src": "NASA.png",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h1
+                className="Info-header"
+              >
+                HOW?
+              </h1>,
+              <p
+                className="Info-text"
+              >
+                Globe Squashers will deliver NASA Hubble Telescope images to you for examination. While examining a photo you can take notes and publish your findings for others to see. With access to everybody's findings you will also be able to quickly compile a mass of evidence to use as fuel for proving the Hubble Telescope is a hoax.
+              </p>,
+            ],
+            "className": "Info-content",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "HOW?",
+                "className": "Info-header",
+              },
+              "ref": null,
+              "rendered": "HOW?",
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Globe Squashers will deliver NASA Hubble Telescope images to you for examination. While examining a photo you can take notes and publish your findings for others to see. With access to everybody's findings you will also be able to quickly compile a mass of evidence to use as fuel for proving the Hubble Telescope is a hoax.",
+                "className": "Info-text",
+              },
+              "ref": null,
+              "rendered": "Globe Squashers will deliver NASA Hubble Telescope images to you for examination. While examining a photo you can take notes and publish your findings for others to see. With access to everybody's findings you will also be able to quickly compile a mass of evidence to use as fuel for proving the Hubble Telescope is a hoax.",
+              "type": "p",
+            },
+          ],
+          "type": "div",
         },
       ],
       "type": "div",
