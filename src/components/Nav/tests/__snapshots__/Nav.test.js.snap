@@ -22,6 +22,7 @@ ShallowWrapper {
           activeClassName="active"
           aria-current="page"
           className="NavLink"
+          exact={true}
           to="/"
         >
           HOME
@@ -56,6 +57,7 @@ ShallowWrapper {
           "aria-current": "page",
           "children": "HOME",
           "className": "NavLink",
+          "exact": true,
           "to": "/",
         },
         "ref": null,
@@ -106,6 +108,7 @@ ShallowWrapper {
             activeClassName="active"
             aria-current="page"
             className="NavLink"
+            exact={true}
             to="/"
           >
             HOME
@@ -140,6 +143,7 @@ ShallowWrapper {
             "aria-current": "page",
             "children": "HOME",
             "className": "NavLink",
+            "exact": true,
             "to": "/",
           },
           "ref": null,
