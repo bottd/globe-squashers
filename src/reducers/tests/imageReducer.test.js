@@ -1,25 +1,34 @@
 import {imageReducer} from '../imageReducer';
 
 describe('imageReducer', () => {
+  const defaultState = {
+    url: null,
+    name: null,
+    description: null,
+  }
+
   it('Should default to returning state', () => {
-    const mockState = 'imageurl.com';
-    const result = imageReducer(mockState, {});
-    expect(result).toEqual(mockState);
+   const result = imageReducer(defaultState, {});
+    expect(result).toEqual(defaultState);
   });
 
   it('Should have a default state', () => {
-    const expected = null;
-    const result = imageReducer(undefined, {})
-    expect(result).toBe(expected);
+    const result = imageReducer(undefined, {});
+    expect(result).toEqual(defaultState);
   });
 
-  it('Should set given image path on SET_IMAGE', () => {
-    const expected = 'imageurl.com';
+  it('Should set given image data on SET_IMAGE', () => {
+    const mockImage = {
+      url: 'imageurl.com',
+      name: 'image',
+      description: 'exciting image'
+    }
+
     const mockAction = {
       type: 'SET_IMAGE',
-      image: 'imageurl.com'
-    }
+      image: mockImage,
+    };
     const result = imageReducer(null, mockAction);
-    expect(result).toBe(expected);
+    expect(result).toEqual(mockImage);
   });
 });
