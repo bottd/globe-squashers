@@ -13,6 +13,10 @@ export default function Home() {
 
   return (
     <div className="Home">
+      <NavLink to="/create" className="NavLink-create">
+        <p className='button-header'>SEARCH</p>
+        <i className="fas fa-caret-right" />
+      </NavLink>
       <div className="Home-title-page">
         <div className="title-container">
           <div className="title-box">

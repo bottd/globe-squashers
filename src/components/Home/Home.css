@@ -4,6 +4,18 @@
   position: relative;
 }
 
+.NavLink-create {
+  margin: 0 auto;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  text-decoration: none;
+  top: 0;
+  right: 0;
+  z-index: 999;
+}
+
 .Home-title-page {
   background-image: url('http://imgsrc.hubblesite.org/hvi/uploads/image_file/image_attachment/28735/xlarge_web.jpg');
   background-repeat: no-repeat;
