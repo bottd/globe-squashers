@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react';
-import {NavLink, Redirect} from 'react-router-dom';
 import {fetchImages} from '../../thunks/fetchImages';
 import {connect} from 'react-redux';
 import './Create.css';
@@ -21,8 +20,7 @@ export function Create(props) {
 
   return (
     <div className="Create">
-      <NavLink to='/'>HOME</NavLink>
-      <NavLink to='/share'>VIEW OTHERS</NavLink>
+      FSDKJFLSDJ
     </div>
   );
 }

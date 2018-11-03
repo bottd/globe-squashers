@@ -5,12 +5,10 @@ import {Create} from '../';
 
 describe('Create', () => {
   describe('Create component', () => {
-    let wrapper;
+    let wrapper, create;
     beforeEach(() => {
-      wrapper = shallow(
-        <MemoryRouter>
-          <Create fetchImages={jest.fn()} page={2} images={[]} />,
-        </MemoryRouter>
+      wrapper = mount(
+        <Create fetchImages={jest.fn()} page={2} images={[]} />,
       );
     });
 

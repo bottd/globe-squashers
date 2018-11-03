@@ -1,16 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Create Create component Should render like snapshot 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <MemoryRouter>
-    <Create
-      fetchImages={[MockFunction]}
-      images={Array []}
-      page={2}
-    />
-    ,
-  </MemoryRouter>,
+ReactWrapper {
+  Symbol(enzyme.__unrendered__): <Create
+    fetchImages={[MockFunction]}
+    images={Array []}
+    page={2}
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -19,131 +15,66 @@ ShallowWrapper {
     "simulateEvent": [Function],
     "unmount": [Function],
   },
+  Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "class",
+    "nodeType": "function",
     "props": Object {
-      "children": Array [
-        <Create
-          fetchImages={[MockFunction]}
-          images={Array []}
-          page={2}
-        />,
-        ",",
-      ],
-      "history": Object {
-        "action": "POP",
-        "block": [Function],
-        "canGo": [Function],
-        "createHref": [Function],
-        "entries": Array [
-          Object {
-            "hash": "",
-            "key": "rc97qn",
-            "pathname": "/",
-            "search": "",
-            "state": undefined,
-          },
-        ],
-        "go": [Function],
-        "goBack": [Function],
-        "goForward": [Function],
-        "index": 0,
-        "length": 1,
-        "listen": [Function],
-        "location": Object {
-          "hash": "",
-          "key": "rc97qn",
-          "pathname": "/",
-          "search": "",
-          "state": undefined,
-        },
-        "push": [Function],
-        "replace": [Function],
-      },
+      "fetchImages": [MockFunction],
+      "images": Array [],
+      "page": 2,
     },
     "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "fetchImages": [MockFunction],
-          "images": Array [],
-          "page": 2,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
+    "rendered": Object {
+      "instance": <div
+        class="Create"
+      >
+        FSDKJFLSDJ
+      </div>,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": "FSDKJFLSDJ",
+        "className": "Create",
       },
-      ",",
-    ],
+      "ref": null,
+      "rendered": Array [
+        "FSDKJFLSDJ",
+      ],
+      "type": "div",
+    },
     "type": [Function],
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "class",
+      "nodeType": "function",
       "props": Object {
-        "children": Array [
-          <Create
-            fetchImages={[MockFunction]}
-            images={Array []}
-            page={2}
-          />,
-          ",",
-        ],
-        "history": Object {
-          "action": "POP",
-          "block": [Function],
-          "canGo": [Function],
-          "createHref": [Function],
-          "entries": Array [
-            Object {
-              "hash": "",
-              "key": "rc97qn",
-              "pathname": "/",
-              "search": "",
-              "state": undefined,
-            },
-          ],
-          "go": [Function],
-          "goBack": [Function],
-          "goForward": [Function],
-          "index": 0,
-          "length": 1,
-          "listen": [Function],
-          "location": Object {
-            "hash": "",
-            "key": "rc97qn",
-            "pathname": "/",
-            "search": "",
-            "state": undefined,
-          },
-          "push": [Function],
-          "replace": [Function],
-        },
+        "fetchImages": [MockFunction],
+        "images": Array [],
+        "page": 2,
       },
       "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "fetchImages": [MockFunction],
-            "images": Array [],
-            "page": 2,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
+      "rendered": Object {
+        "instance": <div
+          class="Create"
+        >
+          FSDKJFLSDJ
+        </div>,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "FSDKJFLSDJ",
+          "className": "Create",
         },
-        ",",
-      ],
+        "ref": null,
+        "rendered": Array [
+          "FSDKJFLSDJ",
+        ],
+        "type": "div",
+      },
       "type": [Function],
     },
   ],
