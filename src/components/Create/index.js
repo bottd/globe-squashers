@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import PropTypes from 'prop-types';
+import v1 from 'uuid/v1';
+import {addProof} from '../../actions/proofsActions';
 import {fetchImages} from '../../thunks/fetchImages';
 import {fetchImage} from '../../thunks/fetchImage';
 import {connect} from 'react-redux';
@@ -9,7 +11,7 @@ export function Create(props) {
   const [isLoaded, setLoaded] = useState(false);
   const [imageID, setImageID] = useState(0);
   const [note, setNote] = useState('');
-  const {fetchImages, fetchImage, images, image, page} = props;
+  const {addProof, fetchImages, fetchImage, images, image, page} = props;
   useEffect(() => {
     if (!isLoaded) {
       fetchImages(page);
@@ -22,13 +24,26 @@ export function Create(props) {
     }
   });
 
+  function handleSubmit(e) {
+    e.preventDefault();
+    const newProof = {
+      note,
+      title: image.name,
+      url: image.url,
+      id: v1(),
+    };
+    console.log(image);
+    addProof(newProof);
+    setNote('');
+  }
+
   function handleNote(e) {
     setNote(e.target.value);
   }
 
   return (
     <div className="Create">
-      <form>
+      <form onSubmit={handleSubmit}>
         <textarea
           className="note-input"
           value={note}
@@ -36,6 +51,9 @@ export function Create(props) {
           rows="5"
           placeholder="Write your note here"
         />
+        <button type="submit" onClick={handleSubmit}>
+          Submit
+        </button>
       </form>
       <img className="hubble-img" src={image.url} alt={image.name} />
     </div>
@@ -49,6 +67,7 @@ export const mapStateToProps = state => ({
 });
 
 export const mapDispatchToProps = dispatch => ({
+  addProof: proof => dispatch(addProof(proof)),
   fetchImages: page => dispatch(fetchImages(page)),
   fetchImage: id => dispatch(fetchImage(id)),
 });
