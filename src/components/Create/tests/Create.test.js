@@ -8,7 +8,13 @@ describe('Create', () => {
     let wrapper, create;
     beforeEach(() => {
       wrapper = mount(
-        <Create fetchImages={jest.fn()} page={2} images={[]} image={{}}/>,
+        <Create
+          fetchImages={jest.fn()}
+          fetchImage={jest.fn()}
+          page={2}
+          images={[]}
+          image={{}}
+        />,
       );
     });
 

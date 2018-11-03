@@ -3,6 +3,7 @@
 exports[`Create Create component Should render like snapshot 1`] = `
 ReactWrapper {
   Symbol(enzyme.__unrendered__): <Create
+    fetchImage={[MockFunction]}
     fetchImages={[MockFunction]}
     image={Object {}}
     images={Array []}
@@ -22,6 +23,7 @@ ReactWrapper {
     "key": undefined,
     "nodeType": "function",
     "props": Object {
+      "fetchImage": [MockFunction],
       "fetchImages": [MockFunction],
       "image": Object {},
       "images": Array [],
@@ -32,28 +34,92 @@ ReactWrapper {
       "instance": <div
         class="Create"
       >
+        <form>
+          <textarea
+            class="note-input"
+            placeholder="Write your note here"
+            rows="5"
+          />
+        </form>
         <img
-          alt="Hubble telecope"
+          class="hubble-img"
         />
       </div>,
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <img
-          alt="Hubble telecope"
-        />,
+        "children": Array [
+          <form>
+            <textarea
+              className="note-input"
+              onChange={[Function]}
+              placeholder="Write your note here"
+              rows="5"
+              value=""
+            />
+          </form>,
+          <img
+            className="hubble-img"
+          />,
+        ],
         "className": "Create",
       },
       "ref": null,
       "rendered": Array [
         Object {
+          "instance": <form>
+            <textarea
+              class="note-input"
+              placeholder="Write your note here"
+              rows="5"
+            />
+          </form>,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <textarea
+              className="note-input"
+              onChange={[Function]}
+              placeholder="Write your note here"
+              rows="5"
+              value=""
+            />,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": <textarea
+                class="note-input"
+                placeholder="Write your note here"
+                rows="5"
+              />,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "note-input",
+                "onChange": [Function],
+                "placeholder": "Write your note here",
+                "rows": "5",
+                "value": "",
+              },
+              "ref": null,
+              "rendered": Array [
+                undefined,
+              ],
+              "type": "textarea",
+            },
+          ],
+          "type": "form",
+        },
+        Object {
           "instance": <img
-            alt="Hubble telecope"
+            class="hubble-img"
           />,
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "alt": "Hubble telecope",
+            "alt": undefined,
+            "className": "hubble-img",
             "src": undefined,
           },
           "ref": null,
@@ -73,6 +139,7 @@ ReactWrapper {
       "key": undefined,
       "nodeType": "function",
       "props": Object {
+        "fetchImage": [MockFunction],
         "fetchImages": [MockFunction],
         "image": Object {},
         "images": Array [],
@@ -83,28 +150,92 @@ ReactWrapper {
         "instance": <div
           class="Create"
         >
+          <form>
+            <textarea
+              class="note-input"
+              placeholder="Write your note here"
+              rows="5"
+            />
+          </form>
           <img
-            alt="Hubble telecope"
+            class="hubble-img"
           />
         </div>,
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": <img
-            alt="Hubble telecope"
-          />,
+          "children": Array [
+            <form>
+              <textarea
+                className="note-input"
+                onChange={[Function]}
+                placeholder="Write your note here"
+                rows="5"
+                value=""
+              />
+            </form>,
+            <img
+              className="hubble-img"
+            />,
+          ],
           "className": "Create",
         },
         "ref": null,
         "rendered": Array [
           Object {
+            "instance": <form>
+              <textarea
+                class="note-input"
+                placeholder="Write your note here"
+                rows="5"
+              />
+            </form>,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <textarea
+                className="note-input"
+                onChange={[Function]}
+                placeholder="Write your note here"
+                rows="5"
+                value=""
+              />,
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": <textarea
+                  class="note-input"
+                  placeholder="Write your note here"
+                  rows="5"
+                />,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "note-input",
+                  "onChange": [Function],
+                  "placeholder": "Write your note here",
+                  "rows": "5",
+                  "value": "",
+                },
+                "ref": null,
+                "rendered": Array [
+                  undefined,
+                ],
+                "type": "textarea",
+              },
+            ],
+            "type": "form",
+          },
+          Object {
             "instance": <img
-              alt="Hubble telecope"
+              class="hubble-img"
             />,
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "alt": "Hubble telecope",
+              "alt": undefined,
+              "className": "hubble-img",
               "src": undefined,
             },
             "ref": null,
