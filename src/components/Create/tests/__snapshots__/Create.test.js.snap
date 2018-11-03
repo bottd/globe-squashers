@@ -4,6 +4,7 @@ exports[`Create Create component Should render like snapshot 1`] = `
 ReactWrapper {
   Symbol(enzyme.__unrendered__): <Create
     fetchImages={[MockFunction]}
+    image={Object {}}
     images={Array []}
     page={2}
   />,
@@ -22,6 +23,7 @@ ReactWrapper {
     "nodeType": "function",
     "props": Object {
       "fetchImages": [MockFunction],
+      "image": Object {},
       "images": Array [],
       "page": 2,
     },
@@ -30,17 +32,36 @@ ReactWrapper {
       "instance": <div
         class="Create"
       >
-        FSDKJFLSDJ
+        <img
+          alt="Hubble telecope"
+        />
       </div>,
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": "FSDKJFLSDJ",
+        "children": <img
+          alt="Hubble telecope"
+        />,
         "className": "Create",
       },
       "ref": null,
       "rendered": Array [
-        "FSDKJFLSDJ",
+        Object {
+          "instance": <img
+            alt="Hubble telecope"
+          />,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "Hubble telecope",
+            "src": undefined,
+          },
+          "ref": null,
+          "rendered": Array [
+            undefined,
+          ],
+          "type": "img",
+        },
       ],
       "type": "div",
     },
@@ -53,6 +74,7 @@ ReactWrapper {
       "nodeType": "function",
       "props": Object {
         "fetchImages": [MockFunction],
+        "image": Object {},
         "images": Array [],
         "page": 2,
       },
@@ -61,17 +83,36 @@ ReactWrapper {
         "instance": <div
           class="Create"
         >
-          FSDKJFLSDJ
+          <img
+            alt="Hubble telecope"
+          />
         </div>,
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "FSDKJFLSDJ",
+          "children": <img
+            alt="Hubble telecope"
+          />,
           "className": "Create",
         },
         "ref": null,
         "rendered": Array [
-          "FSDKJFLSDJ",
+          Object {
+            "instance": <img
+              alt="Hubble telecope"
+            />,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "Hubble telecope",
+              "src": undefined,
+            },
+            "ref": null,
+            "rendered": Array [
+              undefined,
+            ],
+            "type": "img",
+          },
         ],
         "type": "div",
       },

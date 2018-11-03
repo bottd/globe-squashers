@@ -22,7 +22,7 @@ export function Create(props) {
 
   return (
     <div className="Create">
-      {image ? <img src={image}/> : <div>Loading</div>}
+      <img src={image.url} alt="Hubble telecope" />
     </div>
   );
 }
