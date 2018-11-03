@@ -18,21 +18,6 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <NavLink
-          activeClassName="active"
-          aria-current="page"
-          className="NavLink-create"
-          to="/create"
-        >
-          <p
-            className="button-header"
-          >
-            CREATE
-          </p>
-          <i
-            className="fas fa-caret-right"
-          />
-        </NavLink>,
         <div
           className="Home-title-page"
         >
@@ -78,54 +63,6 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "activeClassName": "active",
-          "aria-current": "page",
-          "children": Array [
-            <p
-              className="button-header"
-            >
-              CREATE
-            </p>,
-            <i
-              className="fas fa-caret-right"
-            />,
-          ],
-          "className": "NavLink-create",
-          "to": "/create",
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "CREATE",
-              "className": "button-header",
-            },
-            "ref": null,
-            "rendered": "CREATE",
-            "type": "p",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "className": "fas fa-caret-right",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "i",
-          },
-        ],
-        "type": [Function],
-      },
       Object {
         "instance": null,
         "key": undefined,
@@ -352,21 +289,6 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <NavLink
-            activeClassName="active"
-            aria-current="page"
-            className="NavLink-create"
-            to="/create"
-          >
-            <p
-              className="button-header"
-            >
-              CREATE
-            </p>
-            <i
-              className="fas fa-caret-right"
-            />
-          </NavLink>,
           <div
             className="Home-title-page"
           >
@@ -412,54 +334,6 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "activeClassName": "active",
-            "aria-current": "page",
-            "children": Array [
-              <p
-                className="button-header"
-              >
-                CREATE
-              </p>,
-              <i
-                className="fas fa-caret-right"
-              />,
-            ],
-            "className": "NavLink-create",
-            "to": "/create",
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "CREATE",
-                "className": "button-header",
-              },
-              "ref": null,
-              "rendered": "CREATE",
-              "type": "p",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "className": "fas fa-caret-right",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "i",
-            },
-          ],
-          "type": [Function],
-        },
         Object {
           "instance": null,
           "key": undefined,
