@@ -10,11 +10,11 @@ describe('fetchImage', () => {
     json = jest
       .fn()
       .mockImplementation(() =>
-        Promise.resolve([
+        Promise.resolve({ image_files: [
           {file_url: '.jpg'},
           {file_url: '.png'},
           {file_url: '.gif'},
-        ]),
+        ]}),
       );
     window.fetch = jest.fn().mockImplementation(() =>
       Promise.resolve({
@@ -43,8 +43,8 @@ describe('fetchImage', () => {
     expect(json).toHaveBeenCalled();
   });
 
-  it('Should call setImage with 1 image ending with a .jpg extension', async () => {
-    const expected = '.jpg';
+  it('Should call setImage with 1 image ending with a .png extension', async () => {
+    const expected = '.png';
     await thunk(dispatch);
     expect(dispatch).toHaveBeenCalledWith(setImage(expected));
   });

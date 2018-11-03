@@ -7,7 +7,7 @@ export const fetchImage = id => {
     try {
       const response = await fetch(`http://hubblesite.org/api/v3/image/${id}`);
       const image = await response.json();
-      const findUrl = image.find(file => file.file_url.includes('.jpg'));
+      const findUrl = image.image_files.find(file => file.file_url.includes('.png'));
       dispatch(setImage(findUrl.file_url));
       dispatch(isLoading(false));
     } catch (error) {
