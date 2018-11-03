@@ -12,9 +12,9 @@ describe('fetchImage', () => {
         name: 'image',
         description: 'exciting image',
         image_files: [
-          {file_url: '.jpg'},
           {file_url: '.png'},
           {file_url: '.gif'},
+          {file_url: '.jpg'},
         ],
       }),
     );
