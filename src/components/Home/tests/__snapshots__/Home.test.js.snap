@@ -27,7 +27,7 @@ ShallowWrapper {
           <p
             className="button-header"
           >
-            SEARCH
+            CREATE
           </p>
           <i
             className="fas fa-caret-right"
@@ -89,7 +89,7 @@ ShallowWrapper {
             <p
               className="button-header"
             >
-              SEARCH
+              CREATE
             </p>,
             <i
               className="fas fa-caret-right"
@@ -105,11 +105,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "SEARCH",
+              "children": "CREATE",
               "className": "button-header",
             },
             "ref": null,
-            "rendered": "SEARCH",
+            "rendered": "CREATE",
             "type": "p",
           },
           Object {
@@ -361,7 +361,7 @@ ShallowWrapper {
             <p
               className="button-header"
             >
-              SEARCH
+              CREATE
             </p>
             <i
               className="fas fa-caret-right"
@@ -423,7 +423,7 @@ ShallowWrapper {
               <p
                 className="button-header"
               >
-                SEARCH
+                CREATE
               </p>,
               <i
                 className="fas fa-caret-right"
@@ -439,11 +439,11 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "SEARCH",
+                "children": "CREATE",
                 "className": "button-header",
               },
               "ref": null,
-              "rendered": "SEARCH",
+              "rendered": "CREATE",
               "type": "p",
             },
             Object {
