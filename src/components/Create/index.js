@@ -12,6 +12,7 @@ export function Create(props) {
   const [imageID, setImageID] = useState(0);
   const [note, setNote] = useState('');
   const {addProof, fetchImages, fetchImage, images, image, page} = props;
+
   useEffect(() => {
     if (!isLoaded) {
       fetchImages(page);
@@ -32,7 +33,6 @@ export function Create(props) {
       url: image.url,
       id: v1(),
     };
-    console.log(image);
     addProof(newProof);
     setNote('');
   }
