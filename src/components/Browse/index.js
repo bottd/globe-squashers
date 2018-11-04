@@ -1,11 +1,14 @@
 import React from 'react';
 import {connect} from 'react-redux';
+import ProofCard from './components/ProofCard';
 import './Browse.css';
 
-export function Browse() {
+export function Browse({proofs}) {
+  const proofCards = proofs.map(proof => <ProofCard {...proof} />);
   return (
     <div className="Browse">
       <h1>A browse</h1>
+      {proofCards}
     </div>
   );
 }

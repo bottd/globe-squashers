@@ -5,6 +5,6 @@ export function proofsReducer(state = [], action) {
     case 'REMOVE_PROOF':
       return state.filter(proof => proof.id !== action.proofId);
     default:
-      return [];
+      return state;
   }
 }
