@@ -13,9 +13,11 @@ export default function InfoPage() {
 
   return (
     <div className="InfoPage">
-      <button className="scroll-to-home" onClick={smoothScroll}>
-        <i className="fas fa-caret-up" />
-      </button>
+      <div className="button-wrapper">
+        <button className="scroll-to-home" onClick={smoothScroll}>
+          <i className="fas fa-caret-up" />
+        </button>
+      </div>
       <div className="Info-content">
         <h1 className="Info-header">ABOUT</h1>
         <p className="Info-text">
