@@ -19,28 +19,11 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": Array [
-        <h1>
-          A browse
-        </h1>,
-        Array [],
-      ],
+      "children": Array [],
       "className": "Browse",
     },
     "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "A browse",
-        },
-        "ref": null,
-        "rendered": "A browse",
-        "type": "h1",
-      },
-    ],
+    "rendered": Array [],
     "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -49,28 +32,11 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": Array [
-          <h1>
-            A browse
-          </h1>,
-          Array [],
-        ],
+        "children": Array [],
         "className": "Browse",
       },
       "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "A browse",
-          },
-          "ref": null,
-          "rendered": "A browse",
-          "type": "h1",
-        },
-      ],
+      "rendered": Array [],
       "type": "div",
     },
   ],

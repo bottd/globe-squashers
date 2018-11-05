@@ -1,3 +1,5 @@
 .Browse {
+  display: grid;
   color: #fff;
+  grid-template-columns: 1fr 1fr;
 }
