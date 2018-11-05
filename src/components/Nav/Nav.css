@@ -2,7 +2,7 @@
   background-color: #000;
   display: flex;
   position: fixed;
-  top: 1px;
+  top: 0;
   width: 100vw;
   z-index: 999;
 }

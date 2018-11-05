@@ -2,6 +2,8 @@ import React, {useState, useEffect} from 'react';
 import PropTypes from 'prop-types';
 import v1 from 'uuid/v1';
 import {addProof} from '../../actions/proofsActions';
+import {setPage} from '../../actions/apiActions';
+import {resetImages} from '../../actions/imagesActions';
 import {fetchImages} from '../../thunks/fetchImages';
 import {fetchImage} from '../../thunks/fetchImage';
 import {connect} from 'react-redux';
@@ -9,21 +11,42 @@ import './Create.css';
 
 export function Create(props) {
   const [isLoaded, setLoaded] = useState(false);
-  const [imageID, setImageID] = useState(0);
+  const [currentImage, setCurrentImage] = useState(0);
   const [note, setNote] = useState('');
-  const {addProof, fetchImages, fetchImage, images, image, page} = props;
+  const {
+    addProof,
+    fetchImages,
+    fetchImage,
+    setPage,
+    resetImages,
+    images,
+    image,
+    page,
+  } = props;
 
   useEffect(() => {
     if (!isLoaded) {
       fetchImages(page);
       setLoaded(true);
     }
-    if (!imageID && images.length) {
-      const rand = Math.floor(Math.random() * images.length - 1) + 1;
-      setImageID(images[rand].id);
-      fetchImage(images[rand].id);
+    if (!image.url && images.length) {
+      fetchImage(images[currentImage].id);
     }
   });
+
+  function cycleImage(num) {
+    const newIndex = currentImage + num;
+    if (images[newIndex]) {
+      setCurrentImage(currentImage + num);
+      fetchImage(images[currentImage + num].id);
+    }
+    if (!images[newIndex + 1]) {
+      setPage(page + 1);
+      resetImages();
+      setLoaded(false);
+      setCurrentImage(0);
+    }
+  }
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -44,6 +67,7 @@ export function Create(props) {
   return (
     <div className="Create">
       <form onSubmit={handleSubmit}>
+        <h3>{image.name}</h3>
         <textarea
           className="note-input"
           value={note}
@@ -55,7 +79,16 @@ export function Create(props) {
           Submit
         </button>
       </form>
-      <img className="hubble-img" src={image.url} alt={image.name} />
+      <div
+        className="hubble-img"
+        style={{backgroundImage: `url(${image.url})`}}>
+        <button className="backward-btn" onClick={() => cycleImage(-1)}>
+          <i className="fas fa-chevron-left" />
+        </button>
+        <button className="forward-btn" onClick={() => cycleImage(1)}>
+          <i className="fas fa-chevron-right" />
+        </button>
+      </div>
     </div>
   );
 }
@@ -70,6 +103,8 @@ export const mapDispatchToProps = dispatch => ({
   addProof: proof => dispatch(addProof(proof)),
   fetchImages: page => dispatch(fetchImages(page)),
   fetchImage: id => dispatch(fetchImage(id)),
+  resetImages: () => dispatch(resetImages()),
+  setPage: page => dispatch(setPage(page)),
 });
 
 Create.propTypes = {

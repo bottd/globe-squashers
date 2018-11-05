@@ -35,6 +35,7 @@ ReactWrapper {
         class="Create"
       >
         <form>
+          <h3 />
           <textarea
             class="note-input"
             placeholder="Write your note here"
@@ -46,9 +47,25 @@ ReactWrapper {
             Submit
           </button>
         </form>
-        <img
+        <div
           class="hubble-img"
-        />
+          style="background-image: url(undefined);"
+        >
+          <button
+            class="backward-btn"
+          >
+            <i
+              class="fas fa-chevron-left"
+            />
+          </button>
+          <button
+            class="forward-btn"
+          >
+            <i
+              class="fas fa-chevron-right"
+            />
+          </button>
+        </div>
       </div>,
       "key": undefined,
       "nodeType": "host",
@@ -57,6 +74,7 @@ ReactWrapper {
           <form
             onSubmit={[Function]}
           >
+            <h3 />
             <textarea
               className="note-input"
               onChange={[Function]}
@@ -71,9 +89,31 @@ ReactWrapper {
               Submit
             </button>
           </form>,
-          <img
+          <div
             className="hubble-img"
-          />,
+            style={
+              Object {
+                "backgroundImage": "url(undefined)",
+              }
+            }
+          >
+            <button
+              className="backward-btn"
+              onClick={[Function]}
+            >
+              <i
+                className="fas fa-chevron-left"
+              />
+            </button>
+            <button
+              className="forward-btn"
+              onClick={[Function]}
+            >
+              <i
+                className="fas fa-chevron-right"
+              />
+            </button>
+          </div>,
         ],
         "className": "Create",
       },
@@ -81,6 +121,7 @@ ReactWrapper {
       "rendered": Array [
         Object {
           "instance": <form>
+            <h3 />
             <textarea
               class="note-input"
               placeholder="Write your note here"
@@ -96,6 +137,7 @@ ReactWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
+              <h3 />,
               <textarea
                 className="note-input"
                 onChange={[Function]}
@@ -114,6 +156,19 @@ ReactWrapper {
           },
           "ref": null,
           "rendered": Array [
+            Object {
+              "instance": <h3 />,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": undefined,
+              },
+              "ref": null,
+              "rendered": Array [
+                undefined,
+              ],
+              "type": "h3",
+            },
             Object {
               "instance": <textarea
                 class="note-input"
@@ -158,21 +213,129 @@ ReactWrapper {
           "type": "form",
         },
         Object {
-          "instance": <img
+          "instance": <div
             class="hubble-img"
-          />,
+            style="background-image: url(undefined);"
+          >
+            <button
+              class="backward-btn"
+            >
+              <i
+                class="fas fa-chevron-left"
+              />
+            </button>
+            <button
+              class="forward-btn"
+            >
+              <i
+                class="fas fa-chevron-right"
+              />
+            </button>
+          </div>,
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "alt": undefined,
+            "children": Array [
+              <button
+                className="backward-btn"
+                onClick={[Function]}
+              >
+                <i
+                  className="fas fa-chevron-left"
+                />
+              </button>,
+              <button
+                className="forward-btn"
+                onClick={[Function]}
+              >
+                <i
+                  className="fas fa-chevron-right"
+                />
+              </button>,
+            ],
             "className": "hubble-img",
-            "src": undefined,
+            "style": Object {
+              "backgroundImage": "url(undefined)",
+            },
           },
           "ref": null,
           "rendered": Array [
-            undefined,
+            Object {
+              "instance": <button
+                class="backward-btn"
+              >
+                <i
+                  class="fas fa-chevron-left"
+                />
+              </button>,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <i
+                  className="fas fa-chevron-left"
+                />,
+                "className": "backward-btn",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": <i
+                    class="fas fa-chevron-left"
+                  />,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "fas fa-chevron-left",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    undefined,
+                  ],
+                  "type": "i",
+                },
+              ],
+              "type": "button",
+            },
+            Object {
+              "instance": <button
+                class="forward-btn"
+              >
+                <i
+                  class="fas fa-chevron-right"
+                />
+              </button>,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <i
+                  className="fas fa-chevron-right"
+                />,
+                "className": "forward-btn",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": <i
+                    class="fas fa-chevron-right"
+                  />,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "fas fa-chevron-right",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    undefined,
+                  ],
+                  "type": "i",
+                },
+              ],
+              "type": "button",
+            },
           ],
-          "type": "img",
+          "type": "div",
         },
       ],
       "type": "div",
@@ -197,6 +360,7 @@ ReactWrapper {
           class="Create"
         >
           <form>
+            <h3 />
             <textarea
               class="note-input"
               placeholder="Write your note here"
@@ -208,9 +372,25 @@ ReactWrapper {
               Submit
             </button>
           </form>
-          <img
+          <div
             class="hubble-img"
-          />
+            style="background-image: url(undefined);"
+          >
+            <button
+              class="backward-btn"
+            >
+              <i
+                class="fas fa-chevron-left"
+              />
+            </button>
+            <button
+              class="forward-btn"
+            >
+              <i
+                class="fas fa-chevron-right"
+              />
+            </button>
+          </div>
         </div>,
         "key": undefined,
         "nodeType": "host",
@@ -219,6 +399,7 @@ ReactWrapper {
             <form
               onSubmit={[Function]}
             >
+              <h3 />
               <textarea
                 className="note-input"
                 onChange={[Function]}
@@ -233,9 +414,31 @@ ReactWrapper {
                 Submit
               </button>
             </form>,
-            <img
+            <div
               className="hubble-img"
-            />,
+              style={
+                Object {
+                  "backgroundImage": "url(undefined)",
+                }
+              }
+            >
+              <button
+                className="backward-btn"
+                onClick={[Function]}
+              >
+                <i
+                  className="fas fa-chevron-left"
+                />
+              </button>
+              <button
+                className="forward-btn"
+                onClick={[Function]}
+              >
+                <i
+                  className="fas fa-chevron-right"
+                />
+              </button>
+            </div>,
           ],
           "className": "Create",
         },
@@ -243,6 +446,7 @@ ReactWrapper {
         "rendered": Array [
           Object {
             "instance": <form>
+              <h3 />
               <textarea
                 class="note-input"
                 placeholder="Write your note here"
@@ -258,6 +462,7 @@ ReactWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
+                <h3 />,
                 <textarea
                   className="note-input"
                   onChange={[Function]}
@@ -276,6 +481,19 @@ ReactWrapper {
             },
             "ref": null,
             "rendered": Array [
+              Object {
+                "instance": <h3 />,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": undefined,
+                },
+                "ref": null,
+                "rendered": Array [
+                  undefined,
+                ],
+                "type": "h3",
+              },
               Object {
                 "instance": <textarea
                   class="note-input"
@@ -320,21 +538,129 @@ ReactWrapper {
             "type": "form",
           },
           Object {
-            "instance": <img
+            "instance": <div
               class="hubble-img"
-            />,
+              style="background-image: url(undefined);"
+            >
+              <button
+                class="backward-btn"
+              >
+                <i
+                  class="fas fa-chevron-left"
+                />
+              </button>
+              <button
+                class="forward-btn"
+              >
+                <i
+                  class="fas fa-chevron-right"
+                />
+              </button>
+            </div>,
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "alt": undefined,
+              "children": Array [
+                <button
+                  className="backward-btn"
+                  onClick={[Function]}
+                >
+                  <i
+                    className="fas fa-chevron-left"
+                  />
+                </button>,
+                <button
+                  className="forward-btn"
+                  onClick={[Function]}
+                >
+                  <i
+                    className="fas fa-chevron-right"
+                  />
+                </button>,
+              ],
               "className": "hubble-img",
-              "src": undefined,
+              "style": Object {
+                "backgroundImage": "url(undefined)",
+              },
             },
             "ref": null,
             "rendered": Array [
-              undefined,
+              Object {
+                "instance": <button
+                  class="backward-btn"
+                >
+                  <i
+                    class="fas fa-chevron-left"
+                  />
+                </button>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <i
+                    className="fas fa-chevron-left"
+                  />,
+                  "className": "backward-btn",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": <i
+                      class="fas fa-chevron-left"
+                    />,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "fas fa-chevron-left",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      undefined,
+                    ],
+                    "type": "i",
+                  },
+                ],
+                "type": "button",
+              },
+              Object {
+                "instance": <button
+                  class="forward-btn"
+                >
+                  <i
+                    class="fas fa-chevron-right"
+                  />
+                </button>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <i
+                    className="fas fa-chevron-right"
+                  />,
+                  "className": "forward-btn",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": <i
+                      class="fas fa-chevron-right"
+                    />,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "fas fa-chevron-right",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      undefined,
+                    ],
+                    "type": "i",
+                  },
+                ],
+                "type": "button",
+              },
             ],
-            "type": "img",
+            "type": "div",
           },
         ],
         "type": "div",

@@ -12,8 +12,7 @@
   background-color: transparent;
   border: none;
   position: absolute;
-  top: 0;
-  left: 48vw;
+  top: 2em;
 }
 
 .scroll-to-home:focus {
