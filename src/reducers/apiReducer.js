@@ -1,5 +1,5 @@
 const defaultState = {
-  page: 0,
+  page: 1,
   endpoint: 'images',
   loading: false,
   error: null,
