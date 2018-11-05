@@ -67,6 +67,7 @@ export function Create(props) {
   return (
     <div className="Create">
       <form onSubmit={handleSubmit}>
+        <h3>{image.name}</h3>
         <textarea
           className="note-input"
           value={note}
