@@ -6,8 +6,16 @@ ReactWrapper {
     fetchImage={[MockFunction]}
     fetchImages={[MockFunction]}
     image={Object {}}
-    images={Array []}
+    images={
+      Array [
+        1,
+        2,
+        3,
+      ]
+    }
     page={2}
+    resetImages={[MockFunction]}
+    setPage={[MockFunction]}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -26,8 +34,14 @@ ReactWrapper {
       "fetchImage": [MockFunction],
       "fetchImages": [MockFunction],
       "image": Object {},
-      "images": Array [],
+      "images": Array [
+        1,
+        2,
+        3,
+      ],
       "page": 2,
+      "resetImages": [MockFunction],
+      "setPage": [MockFunction],
     },
     "ref": null,
     "rendered": Object {
@@ -351,8 +365,14 @@ ReactWrapper {
         "fetchImage": [MockFunction],
         "fetchImages": [MockFunction],
         "image": Object {},
-        "images": Array [],
+        "images": Array [
+          1,
+          2,
+          3,
+        ],
         "page": 2,
+        "resetImages": [MockFunction],
+        "setPage": [MockFunction],
       },
       "ref": null,
       "rendered": Object {
