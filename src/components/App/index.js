@@ -10,11 +10,11 @@ import './App.css';
 export function App() {
   return (
     <div className="App">
-      <Nav/>
+      <Nav />
       <Switch>
         <Route exact path="/create" component={Create} />
         <Route exact path="/browse" component={Browse} />
-        <Route exact path="draw" component={Draw}/>
+        <Route exact path="/draw" component={Draw} />
         <Route exact path="/" component={Home} />
       </Switch>
     </div>
