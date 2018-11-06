@@ -1,7 +1,7 @@
 import React from 'react';
-import {MemoryRouter} from 'react-router-dom';
 import {shallow, mount} from 'enzyme';
 import {Create} from '../';
+import {render} from 'react-testing-library';
 
 describe('Create', () => {
   describe('Create component', () => {
@@ -10,15 +10,15 @@ describe('Create', () => {
       fetchImages = jest.fn();
       fetchImage = jest.fn();
       setPage = jest.fn();
-      resetImages= jest.fn();
-      wrapper = mount(
+      resetImages = jest.fn();
+      wrapper = shallow(
         <Create
           fetchImages={fetchImages}
           fetchImage={fetchImage}
           setPage={setPage}
           resetImages={resetImages}
           page={2}
-          images={[1,2,3]}
+          images={[1, 2, 3]}
           image={{}}
         />,
       );
@@ -28,5 +28,13 @@ describe('Create', () => {
       expect(wrapper).toMatchSnapshot();
     });
 
+    it('Should have be loaded after mount', () => {
+      expect(wrapper.state().isLoaded).toBe(true);
+    });
+
+    it('Should be able to cycleImages', async () => {
+      await wrapper.instance().cycleImage(1);
+      expect(wrapper.state().currentImage).toBe(1);
+    });
   });
 });

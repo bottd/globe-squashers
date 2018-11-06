@@ -13,6 +13,13 @@ describe('Home', () => {
     it('Should render like snapshot', () => {
       expect(wrapper).toMatchSnapshot();
     });
+
+    it('Should call scrollTo on click', () => {
+      window.scrollTo = jest.fn();
+      const btn = wrapper.find('.scroll-to-info');
+      btn.simulate('click');
+      expect(window.scrollTo).toHaveBeenCalled();
+    });
   });
 
   describe('InfoPage component', () => {
@@ -23,6 +30,13 @@ describe('Home', () => {
 
     it('Should render like snapshot', () => {
       expect(wrapper).toMatchSnapshot();
+    });
+
+    it('Should call scrollTo on click', () => {
+      window.scrollTo = jest.fn();
+      const btn = wrapper.find('.scroll-to-home');
+      btn.simulate('click');
+      expect(window.scrollTo).toHaveBeenCalled();
     });
   });
 });

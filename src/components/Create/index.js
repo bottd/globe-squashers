@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import v1 from 'uuid/v1';
 import {addProof} from '../../actions/proofsActions';
@@ -9,47 +9,55 @@ import {fetchImage} from '../../thunks/fetchImage';
 import {connect} from 'react-redux';
 import './Create.css';
 
-export function Create(props) {
-  const [isLoaded, setLoaded] = useState(false);
-  const [currentImage, setCurrentImage] = useState(0);
-  const [note, setNote] = useState('');
-  const {
-    addProof,
-    fetchImages,
-    fetchImage,
-    setPage,
-    resetImages,
-    images,
-    image,
-    page,
-  } = props;
+export class Create extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isLoaded: false,
+      currentImage: 0,
+      note: '',
+    };
+  }
 
-  useEffect(() => {
+  componentDidMount() {
+    const {fetchImages, page} = this.props;
+    fetchImages(page);
+    this.setState({isLoaded: true});
+  }
+
+  componentDidUpdate() {
+    const {isLoaded} = this.state;
+    const {fetchImages, fetchImage, page, image, images} = this.props;
     if (!isLoaded) {
       fetchImages(page);
-      setLoaded(true);
+      this.setState({isLoaded: true});
     }
     if (!image.url && images.length) {
-      fetchImage(images[currentImage].id);
-    }
-  });
-
-  function cycleImage(num) {
-    const newIndex = currentImage + num;
-    if (images[newIndex]) {
-      setCurrentImage(currentImage + num);
-      fetchImage(images[currentImage + num].id);
-    }
-    if (!images[newIndex + 1]) {
-      setPage(page + 1);
-      resetImages();
-      setLoaded(false);
-      setCurrentImage(0);
+      fetchImage(images[this.state.currentImage].id);
     }
   }
 
-  function handleSubmit(e) {
+  cycleImage(num) {
+    const {images, fetchImage} = this.props;
+    const newIndex = this.state.currentImage + num;
+    if (images[newIndex]) {
+      fetchImage(images[newIndex].id);
+      this.setState({currentImage: newIndex});
+    }
+    if (!images[newIndex + 1]) {
+      setPage(this.props.page + 1);
+      resetImages();
+      this.setState({
+        loaded: false,
+        currentImage: 0,
+      });
+    }
+  }
+
+  handleSubmit = (e) => {
     e.preventDefault();
+    const {note} = this.state;
+    const {image, addProof} = this.props;
     const newProof = {
       note,
       title: image.name,
@@ -57,40 +65,46 @@ export function Create(props) {
       id: v1(),
     };
     addProof(newProof);
-    setNote('');
+    this.setState({note: ''});
   }
 
-  function handleNote(e) {
-    setNote(e.target.value);
+  handleNote = (e) => {
+    this.setState({
+      note: e.target.value,
+    });
   }
 
-  return (
-    <div className="Create">
-      <form onSubmit={handleSubmit}>
-        <h3>{image.name}</h3>
-        <textarea
-          className="note-input"
-          value={note}
-          onChange={handleNote}
-          rows="5"
-          placeholder="Write your note here"
-        />
-        <button type="submit" onClick={handleSubmit}>
-          Submit
-        </button>
-      </form>
-      <div
-        className="hubble-img"
-        style={{backgroundImage: `url(${image.url})`}}>
-        <button className="backward-btn" onClick={() => cycleImage(-1)}>
-          <i className="fas fa-chevron-left" />
-        </button>
-        <button className="forward-btn" onClick={() => cycleImage(1)}>
-          <i className="fas fa-chevron-right" />
-        </button>
+  render() {
+    const {note} = this.state;
+    const {image} = this.props;
+    return (
+      <div className="Create">
+        <form onSubmit={this.handleSubmit}>
+          <h3>{image.name}</h3>
+          <textarea
+            className="note-input"
+            value={note}
+            onChange={this.handleNote}
+            rows="5"
+            placeholder="Write your note here"
+          />
+          <button type="submit" onClick={this.handleSubmit}>
+            Submit
+          </button>
+        </form>
+        <div
+          className="hubble-img"
+          style={{backgroundImage: `url(${image.url})`}}>
+          <button className="backward-btn" onClick={() => this.cycleImage(-1)}>
+            <i className="fas fa-chevron-left" />
+          </button>
+          <button className="forward-btn" onClick={() => this.cycleImage(1)}>
+            <i className="fas fa-chevron-right" />
+          </button>
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
 
 export const mapStateToProps = state => ({
