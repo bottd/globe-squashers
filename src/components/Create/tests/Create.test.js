@@ -11,7 +11,7 @@ describe('Create', () => {
       fetchImage = jest.fn();
       setPage = jest.fn();
       resetImages = jest.fn();
-      wrapper = render(
+      wrapper = shallow(
         <Create
           fetchImages={fetchImages}
           fetchImage={fetchImage}
@@ -28,5 +28,13 @@ describe('Create', () => {
       expect(wrapper).toMatchSnapshot();
     });
 
+    it('Should have be loaded after mount', () => {
+      expect(wrapper.state().isLoaded).toBe(true);
+    });
+
+    it('Should be able to cycleImages', async () => {
+      await wrapper.instance().cycleImage(1);
+      expect(wrapper.state().currentImage).toBe(1);
+    });
   });
 });
