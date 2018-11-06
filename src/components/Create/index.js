@@ -122,11 +122,13 @@ export const mapDispatchToProps = dispatch => ({
 });
 
 Create.propTypes = {
+  addProof: PropTypes.func.isRequired,
   page: PropTypes.number.isRequired,
   images: PropTypes.array.isRequired,
   image: PropTypes.object.isRequired,
   fetchImages: PropTypes.func.isRequired,
   fetchImage: PropTypes.func.isRequired,
+  setPage: PropTypes.func.isRequired,
 };
 export default connect(
   mapStateToProps,
