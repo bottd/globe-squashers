@@ -5,18 +5,15 @@ import {render} from 'react-testing-library';
 
 describe('Create', () => {
   describe('Create component', () => {
-    let wrapper, create, fetchImages, fetchImage, setPage, resetImages;
+    let wrapper;
     beforeEach(() => {
-      fetchImages = jest.fn();
-      fetchImage = jest.fn();
-      setPage = jest.fn();
-      resetImages = jest.fn();
-      wrapper = shallow(
+     wrapper = shallow(
         <Create
-          fetchImages={fetchImages}
-          fetchImage={fetchImage}
-          setPage={setPage}
-          resetImages={resetImages}
+          addProof={jest.fn()}
+          fetchImages={jest.fn()}
+          fetchImage={jest.fn()}
+          setPage={jest.fn()}
+          resetImages={jest.fn()}
           page={2}
           images={[1, 2, 3]}
           image={{}}

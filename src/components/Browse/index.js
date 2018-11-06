@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import ProofCard from './components/ProofCard';
 import './Browse.css';
@@ -13,6 +14,10 @@ export const mapStateToProps = state => ({
 });
 
 export const mapDispatchToProps = dispatch => ({});
+
+Browse.propTypes = {
+  proofs: PropTypes.array.isRequired
+}
 
 export default connect(
   mapStateToProps,
