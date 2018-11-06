@@ -31,7 +31,8 @@ h3 {
   position: relative;
 }
 
-.backward-btn, .forward-btn {
+.backward-btn,
+.forward-btn {
   background: transparent;
   border: none;
   height: 100%;
@@ -39,7 +40,8 @@ h3 {
   position: absolute;
 }
 
-.backward-btn:focus, .forward-btn:focus {
+.backward-btn:focus,
+.forward-btn:focus {
   outline: 0;
 }
 

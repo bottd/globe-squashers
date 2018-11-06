@@ -6,7 +6,7 @@ describe('App', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = shallow(<App/>);
+    wrapper = shallow(<App />);
   });
 
   it('Should render like snapshot', () => {
