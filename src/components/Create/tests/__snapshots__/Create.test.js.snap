@@ -1,51 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Create Create component Should render like snapshot 1`] = `
-ReactWrapper {
-  Symbol(enzyme.__unrendered__): <Create
-    fetchImage={[MockFunction]}
-    fetchImages={[MockFunction]}
-    image={Object {}}
-    images={
-      Array [
-        1,
-        2,
-        3,
-      ]
-    }
-    page={2}
-    resetImages={[MockFunction]}
-    setPage={[MockFunction]}
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "function",
-    "props": Object {
-      "fetchImage": [MockFunction],
-      "fetchImages": [MockFunction],
-      "image": Object {},
-      "images": Array [
-        1,
-        2,
-        3,
-      ],
-      "page": 2,
-      "resetImages": [MockFunction],
-      "setPage": [MockFunction],
-    },
-    "ref": null,
-    "rendered": Object {
-      "instance": <div
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
         class="Create"
       >
         <form>
@@ -80,630 +40,85 @@ ReactWrapper {
             />
           </button>
         </div>
-      </div>,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          <form
-            onSubmit={[Function]}
-          >
-            <h3 />
-            <textarea
-              className="note-input"
-              onChange={[Function]}
-              placeholder="Write your note here"
-              rows="5"
-              value=""
-            />
-            <button
-              onClick={[Function]}
-              type="submit"
-            >
-              Submit
-            </button>
-          </form>,
-          <div
-            className="hubble-img"
-            style={
-              Object {
-                "backgroundImage": "url(undefined)",
-              }
-            }
-          >
-            <button
-              className="backward-btn"
-              onClick={[Function]}
-            >
-              <i
-                className="fas fa-chevron-left"
-              />
-            </button>
-            <button
-              className="forward-btn"
-              onClick={[Function]}
-            >
-              <i
-                className="fas fa-chevron-right"
-              />
-            </button>
-          </div>,
-        ],
-        "className": "Create",
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": <form>
-            <h3 />
-            <textarea
-              class="note-input"
-              placeholder="Write your note here"
-              rows="5"
-            />
-            <button
-              type="submit"
-            >
-              Submit
-            </button>
-          </form>,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <h3 />,
-              <textarea
-                className="note-input"
-                onChange={[Function]}
-                placeholder="Write your note here"
-                rows="5"
-                value=""
-              />,
-              <button
-                onClick={[Function]}
-                type="submit"
-              >
-                Submit
-              </button>,
-            ],
-            "onSubmit": [Function],
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": <h3 />,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": undefined,
-              },
-              "ref": null,
-              "rendered": Array [
-                undefined,
-              ],
-              "type": "h3",
-            },
-            Object {
-              "instance": <textarea
-                class="note-input"
-                placeholder="Write your note here"
-                rows="5"
-              />,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "className": "note-input",
-                "onChange": [Function],
-                "placeholder": "Write your note here",
-                "rows": "5",
-                "value": "",
-              },
-              "ref": null,
-              "rendered": Array [
-                undefined,
-              ],
-              "type": "textarea",
-            },
-            Object {
-              "instance": <button
-                type="submit"
-              >
-                Submit
-              </button>,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Submit",
-                "onClick": [Function],
-                "type": "submit",
-              },
-              "ref": null,
-              "rendered": Array [
-                "Submit",
-              ],
-              "type": "button",
-            },
-          ],
-          "type": "form",
-        },
-        Object {
-          "instance": <div
-            class="hubble-img"
-            style="background-image: url(undefined);"
-          >
-            <button
-              class="backward-btn"
-            >
-              <i
-                class="fas fa-chevron-left"
-              />
-            </button>
-            <button
-              class="forward-btn"
-            >
-              <i
-                class="fas fa-chevron-right"
-              />
-            </button>
-          </div>,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <button
-                className="backward-btn"
-                onClick={[Function]}
-              >
-                <i
-                  className="fas fa-chevron-left"
-                />
-              </button>,
-              <button
-                className="forward-btn"
-                onClick={[Function]}
-              >
-                <i
-                  className="fas fa-chevron-right"
-                />
-              </button>,
-            ],
-            "className": "hubble-img",
-            "style": Object {
-              "backgroundImage": "url(undefined)",
-            },
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": <button
-                class="backward-btn"
-              >
-                <i
-                  class="fas fa-chevron-left"
-                />
-              </button>,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": <i
-                  className="fas fa-chevron-left"
-                />,
-                "className": "backward-btn",
-                "onClick": [Function],
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": <i
-                    class="fas fa-chevron-left"
-                  />,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "className": "fas fa-chevron-left",
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    undefined,
-                  ],
-                  "type": "i",
-                },
-              ],
-              "type": "button",
-            },
-            Object {
-              "instance": <button
-                class="forward-btn"
-              >
-                <i
-                  class="fas fa-chevron-right"
-                />
-              </button>,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": <i
-                  className="fas fa-chevron-right"
-                />,
-                "className": "forward-btn",
-                "onClick": [Function],
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": <i
-                    class="fas fa-chevron-right"
-                  />,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "className": "fas fa-chevron-right",
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    undefined,
-                  ],
-                  "type": "i",
-                },
-              ],
-              "type": "button",
-            },
-          ],
-          "type": "div",
-        },
-      ],
-      "type": "div",
-    },
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "function",
-      "props": Object {
-        "fetchImage": [MockFunction],
-        "fetchImages": [MockFunction],
-        "image": Object {},
-        "images": Array [
-          1,
-          2,
-          3,
-        ],
-        "page": 2,
-        "resetImages": [MockFunction],
-        "setPage": [MockFunction],
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": <div
-          class="Create"
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="Create"
+    >
+      <form>
+        <h3 />
+        <textarea
+          class="note-input"
+          placeholder="Write your note here"
+          rows="5"
+        />
+        <button
+          type="submit"
         >
-          <form>
-            <h3 />
-            <textarea
-              class="note-input"
-              placeholder="Write your note here"
-              rows="5"
-            />
-            <button
-              type="submit"
-            >
-              Submit
-            </button>
-          </form>
-          <div
-            class="hubble-img"
-            style="background-image: url(undefined);"
-          >
-            <button
-              class="backward-btn"
-            >
-              <i
-                class="fas fa-chevron-left"
-              />
-            </button>
-            <button
-              class="forward-btn"
-            >
-              <i
-                class="fas fa-chevron-right"
-              />
-            </button>
-          </div>
-        </div>,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            <form
-              onSubmit={[Function]}
-            >
-              <h3 />
-              <textarea
-                className="note-input"
-                onChange={[Function]}
-                placeholder="Write your note here"
-                rows="5"
-                value=""
-              />
-              <button
-                onClick={[Function]}
-                type="submit"
-              >
-                Submit
-              </button>
-            </form>,
-            <div
-              className="hubble-img"
-              style={
-                Object {
-                  "backgroundImage": "url(undefined)",
-                }
-              }
-            >
-              <button
-                className="backward-btn"
-                onClick={[Function]}
-              >
-                <i
-                  className="fas fa-chevron-left"
-                />
-              </button>
-              <button
-                className="forward-btn"
-                onClick={[Function]}
-              >
-                <i
-                  className="fas fa-chevron-right"
-                />
-              </button>
-            </div>,
-          ],
-          "className": "Create",
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": <form>
-              <h3 />
-              <textarea
-                class="note-input"
-                placeholder="Write your note here"
-                rows="5"
-              />
-              <button
-                type="submit"
-              >
-                Submit
-              </button>
-            </form>,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                <h3 />,
-                <textarea
-                  className="note-input"
-                  onChange={[Function]}
-                  placeholder="Write your note here"
-                  rows="5"
-                  value=""
-                />,
-                <button
-                  onClick={[Function]}
-                  type="submit"
-                >
-                  Submit
-                </button>,
-              ],
-              "onSubmit": [Function],
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": <h3 />,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": undefined,
-                },
-                "ref": null,
-                "rendered": Array [
-                  undefined,
-                ],
-                "type": "h3",
-              },
-              Object {
-                "instance": <textarea
-                  class="note-input"
-                  placeholder="Write your note here"
-                  rows="5"
-                />,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "className": "note-input",
-                  "onChange": [Function],
-                  "placeholder": "Write your note here",
-                  "rows": "5",
-                  "value": "",
-                },
-                "ref": null,
-                "rendered": Array [
-                  undefined,
-                ],
-                "type": "textarea",
-              },
-              Object {
-                "instance": <button
-                  type="submit"
-                >
-                  Submit
-                </button>,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "Submit",
-                  "onClick": [Function],
-                  "type": "submit",
-                },
-                "ref": null,
-                "rendered": Array [
-                  "Submit",
-                ],
-                "type": "button",
-              },
-            ],
-            "type": "form",
-          },
-          Object {
-            "instance": <div
-              class="hubble-img"
-              style="background-image: url(undefined);"
-            >
-              <button
-                class="backward-btn"
-              >
-                <i
-                  class="fas fa-chevron-left"
-                />
-              </button>
-              <button
-                class="forward-btn"
-              >
-                <i
-                  class="fas fa-chevron-right"
-                />
-              </button>
-            </div>,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                <button
-                  className="backward-btn"
-                  onClick={[Function]}
-                >
-                  <i
-                    className="fas fa-chevron-left"
-                  />
-                </button>,
-                <button
-                  className="forward-btn"
-                  onClick={[Function]}
-                >
-                  <i
-                    className="fas fa-chevron-right"
-                  />
-                </button>,
-              ],
-              "className": "hubble-img",
-              "style": Object {
-                "backgroundImage": "url(undefined)",
-              },
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": <button
-                  class="backward-btn"
-                >
-                  <i
-                    class="fas fa-chevron-left"
-                  />
-                </button>,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": <i
-                    className="fas fa-chevron-left"
-                  />,
-                  "className": "backward-btn",
-                  "onClick": [Function],
-                },
-                "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": <i
-                      class="fas fa-chevron-left"
-                    />,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "className": "fas fa-chevron-left",
-                    },
-                    "ref": null,
-                    "rendered": Array [
-                      undefined,
-                    ],
-                    "type": "i",
-                  },
-                ],
-                "type": "button",
-              },
-              Object {
-                "instance": <button
-                  class="forward-btn"
-                >
-                  <i
-                    class="fas fa-chevron-right"
-                  />
-                </button>,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": <i
-                    className="fas fa-chevron-right"
-                  />,
-                  "className": "forward-btn",
-                  "onClick": [Function],
-                },
-                "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": <i
-                      class="fas fa-chevron-right"
-                    />,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "className": "fas fa-chevron-right",
-                    },
-                    "ref": null,
-                    "rendered": Array [
-                      undefined,
-                    ],
-                    "type": "i",
-                  },
-                ],
-                "type": "button",
-              },
-            ],
-            "type": "div",
-          },
-        ],
-        "type": "div",
-      },
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getDerivedStateFromProps": true,
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-  },
+          Submit
+        </button>
+      </form>
+      <div
+        class="hubble-img"
+        style="background-image: url(undefined);"
+      >
+        <button
+          class="backward-btn"
+        >
+          <i
+            class="fas fa-chevron-left"
+          />
+        </button>
+        <button
+          class="forward-btn"
+        >
+          <i
+            class="fas fa-chevron-right"
+          />
+        </button>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "getAllByAltText": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllBySelectText": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getAllByValue": [Function],
+  "getByAltText": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getBySelectText": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "getByValue": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllBySelectText": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryAllByValue": [Function],
+  "queryByAltText": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryBySelectText": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "queryByValue": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
 }
 `;
