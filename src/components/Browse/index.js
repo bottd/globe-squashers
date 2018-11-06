@@ -5,11 +5,7 @@ import './Browse.css';
 
 export function Browse({proofs}) {
   const proofCards = proofs.map(proof => <ProofCard {...proof} />);
-  return (
-    <div className="Browse">
-      {proofCards}
-    </div>
-  );
+  return <div className="Browse">{proofCards}</div>;
 }
 
 export const mapStateToProps = state => ({
