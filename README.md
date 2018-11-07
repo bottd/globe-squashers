@@ -2,7 +2,7 @@
 # Globe Squashers
 
 ## Introduction
-#### [Deplyoyed here](https://github.com/bottd/globe-squashers)
+#### [Deplyoyed here](https://bottd.github.io/globe-squashers/)
 A web app built on React using Redux.  Globe Squashers pulls images from NASA's hubble telescope API to allow flat earth believers to allow them to take notes on why they may believe the picture to be faked.  Afterwards, you can view any images with their notes alongside all other notes previously taken.
 
 ## Wireframes
