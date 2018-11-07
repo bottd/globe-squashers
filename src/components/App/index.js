@@ -1,7 +1,7 @@
 import React from 'react';
 import {Switch, Route, withRouter} from 'react-router';
-import Browse from '../Browse';
-import Create from '../Create';
+import Browse from '../../containers/Browse';
+import Create from '../../containers/Create';
 import Home from '../Home';
 import Nav from '../Nav';
 import './App.css';
