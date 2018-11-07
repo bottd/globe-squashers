@@ -3,3 +3,13 @@
   color: #fff;
   grid-template-columns: 1fr 1fr;
 }
+
+.Browse p {
+  color: #fff;
+  font-size: 3em;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin-top: 2em;
+  text-align: center;
+  width: 100%;
+}

@@ -19,11 +19,23 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": Array [],
+      "children": <p>
+        No proof here, go to the create tab and start working!
+      </p>,
       "className": "Browse",
     },
     "ref": null,
-    "rendered": Array [],
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": "No proof here, go to the create tab and start working!",
+      },
+      "ref": null,
+      "rendered": "No proof here, go to the create tab and start working!",
+      "type": "p",
+    },
     "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -32,11 +44,23 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": Array [],
+        "children": <p>
+          No proof here, go to the create tab and start working!
+        </p>,
         "className": "Browse",
       },
       "ref": null,
-      "rendered": Array [],
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "No proof here, go to the create tab and start working!",
+        },
+        "ref": null,
+        "rendered": "No proof here, go to the create tab and start working!",
+        "type": "p",
+      },
       "type": "div",
     },
   ],

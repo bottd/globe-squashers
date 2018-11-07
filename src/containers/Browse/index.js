@@ -6,7 +6,15 @@ import './Browse.css';
 
 export function Browse({proofs}) {
   const proofCards = proofs.map(proof => <ProofCard {...proof} />);
-  return <div className="Browse">{proofCards}</div>;
+  return (
+    <div className="Browse">
+      {proofCards.length ? (
+        proofCards
+      ) : (
+        <p>No proof here, go to the create tab and start working!</p>
+      )}
+    </div>
+  );
 }
 
 export const mapStateToProps = state => ({
@@ -16,8 +24,8 @@ export const mapStateToProps = state => ({
 export const mapDispatchToProps = dispatch => ({});
 
 Browse.propTypes = {
-  proofs: PropTypes.array.isRequired
-}
+  proofs: PropTypes.array.isRequired,
+};
 
 export default connect(
   mapStateToProps,
