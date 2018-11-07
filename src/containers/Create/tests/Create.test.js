@@ -1,7 +1,6 @@
 import React from 'react';
-import {shallow, mount} from 'enzyme';
+import {shallow} from 'enzyme';
 import {Create} from '../';
-import {render} from 'react-testing-library';
 
 describe('Create', () => {
   describe('Create component', () => {
