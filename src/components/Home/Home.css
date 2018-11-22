@@ -17,7 +17,7 @@
 }
 
 .Home-title-page {
-  background-image: url('https://cors-anywhere.herokuapp.com/http://imgsrc.hubblesite.org/hvi/uploads/image_file/image_attachment/28735/xlarge_web.jpg');
+  background-image: url('http://imgsrc.hubblesite.org/hvi/uploads/image_file/image_attachment/28735/xlarge_web.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;

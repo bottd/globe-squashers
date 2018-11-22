@@ -5,7 +5,7 @@ export const fetchImage = id => {
   return async dispatch => {
     dispatch(isLoading(true));
     try {
-      const response = await fetch(`https://cors-anywhere.herokuapp.com/http://hubblesite.org/api/v3/image/${id}`);
+      const response = await fetch(`http://hubblesite.org/api/v3/image/${id}`);
       const image = await response.json();
       const findUrl = image.image_files.find(
         file =>
