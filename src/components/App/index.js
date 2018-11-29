@@ -11,9 +11,9 @@ export function App() {
     <div className="App">
       <Nav />
       <Switch>
-        <Route exact path="/create" component={Create} />
-        <Route exact path="/browse" component={Browse} />
-        <Route exact path="/" component={Home} />
+        <Route exact path="/globe-squashers/create" component={Create} />
+        <Route exact path="/globe-squashers/browse" component={Browse} />
+        <Route exact path="/globe-squashers" component={Home} />
       </Switch>
     </div>
   );
