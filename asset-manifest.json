@@ -1,15 +1,15 @@
 {
   "main.css": "/globe-squashers/static/css/main.efbd768f.chunk.css",
-  "main.js": "/globe-squashers/static/js/main.7ac3ff2f.chunk.js",
-  "main.js.map": "/globe-squashers/static/js/main.7ac3ff2f.chunk.js.map",
-  "static/js/1.45d35c25.chunk.js": "/globe-squashers/static/js/1.45d35c25.chunk.js",
-  "static/js/1.45d35c25.chunk.js.map": "/globe-squashers/static/js/1.45d35c25.chunk.js.map",
+  "main.js": "/globe-squashers/static/js/main.4f630ab8.chunk.js",
+  "main.js.map": "/globe-squashers/static/js/main.4f630ab8.chunk.js.map",
+  "static/js/1.f6f20a8e.chunk.js": "/globe-squashers/static/js/1.f6f20a8e.chunk.js",
+  "static/js/1.f6f20a8e.chunk.js.map": "/globe-squashers/static/js/1.f6f20a8e.chunk.js.map",
   "runtime~main.js": "/globe-squashers/static/js/runtime~main.15fd2203.js",
   "runtime~main.js.map": "/globe-squashers/static/js/runtime~main.15fd2203.js.map",
   "static/css/main.efbd768f.chunk.css.map": "/globe-squashers/static/css/main.efbd768f.chunk.css.map",
   "static/media/flatEarth.gif": "/globe-squashers/static/media/flatEarth.bcf7f693.gif",
   "static/media/NASA.png": "/globe-squashers/static/media/NASA.3fe966d1.png",
   "index.html": "/globe-squashers/index.html",
-  "precache-manifest.7a9cb71e4387960ebde3ba0852c16942.js": "/globe-squashers/precache-manifest.7a9cb71e4387960ebde3ba0852c16942.js",
+  "precache-manifest.8282539296bfaf6826b3bec3a0119b36.js": "/globe-squashers/precache-manifest.8282539296bfaf6826b3bec3a0119b36.js",
   "service-worker.js": "/globe-squashers/service-worker.js"
 }
