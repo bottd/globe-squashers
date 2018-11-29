@@ -6,7 +6,7 @@ export const fetchImages = page => {
     dispatch(isLoading(true));
     try {
       const response = await fetch(
-        `http://hubblesite.org/api/v3/images?page=${page}`,
+        `https://cors-anywhere.herokuapp.com/http://hubblesite.org/api/v3/images?page=${page}`,
       );
       const images = await response.json();
       const cleanImages = images.map(image => ({
