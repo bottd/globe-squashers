@@ -1,5 +1,5 @@
 import React from 'react';
-import {Switch, Route, withRouter} from 'react-router';
+import {Switch, Route, withRouter, Redirect} from 'react-router';
 import Browse from '../../containers/Browse';
 import Create from '../../containers/Create';
 import Home from '../Home';
@@ -14,6 +14,7 @@ export function App() {
         <Route exact path="/globe-squashers/create" component={Create} />
         <Route exact path="/globe-squashers/browse" component={Browse} />
         <Route exact path="/globe-squashers" component={Home} />
+        <Redirect to="/globe-squashers" />
       </Switch>
     </div>
   );
