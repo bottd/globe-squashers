@@ -12,19 +12,19 @@ self.__precacheManifest = [
     "url": "/globe-squashers/static/js/runtime~main.15fd2203.js"
   },
   {
-    "revision": "92dabdea2e9cde394e74",
-    "url": "/globe-squashers/static/js/main.92dabdea.chunk.js"
+    "revision": "7ac3ff2ff936ca2ffe9a",
+    "url": "/globe-squashers/static/js/main.7ac3ff2f.chunk.js"
   },
   {
     "revision": "45d35c253e0d18961a9b",
     "url": "/globe-squashers/static/js/1.45d35c25.chunk.js"
   },
   {
-    "revision": "92dabdea2e9cde394e74",
+    "revision": "7ac3ff2ff936ca2ffe9a",
     "url": "/globe-squashers/static/css/main.efbd768f.chunk.css"
   },
   {
-    "revision": "b60c65f93c91241baf888fc8dee1bd31",
+    "revision": "5910556afd519ad3bb8e3d76125d8243",
     "url": "/globe-squashers/index.html"
   }
 ];
